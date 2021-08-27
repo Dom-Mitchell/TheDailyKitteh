@@ -36,23 +36,23 @@ h1 {
   margin: 20px 0px 5px;
 }
 
-header ul {
-  display: block;
+.heading {
+  background-color: #00bfd5;
+  color: #f2f7f5;
+  list-style: none;
   justify-content: center;
   text-decoration: underline;
-  list-style: none;
+  text-align: center;
+}
+
+header ul {
+  justify-content: center;
 }
 
 header ul li {
-  color: #f2f7f5;
-  background-color: #00bfd5;
-  text-align: center;
-  justify-content: center;
+  list-style: none;
   padding: 5px 15px;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
+
 }
 
 h1 {
@@ -123,13 +123,10 @@ footer {
   background-color: var(--slate);
   color: black;
   display: block;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  width: 100%;
-  /* left: 0;
-  right: 0; */
-  /* width: 100%; */
-  /* color: #fff; */
+  left: 0;
+  right: 0;
 }
 
 footer ul {
@@ -151,5 +148,4 @@ a {
 
 nav ul {
   display: flex;
-  padding: 10px;
 }
