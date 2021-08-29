@@ -16,6 +16,16 @@
   --pale-green: #e1eedd;
   --mando-blue: #1857a4;
   --slate: #c8d8e4;
+  /* Auto Colors */
+  --beau-blue: #c8d8e4ff;
+  --honeydew: #e1eeddff;
+  --lapis-lazuli: #336699ff;
+  --charcoal: #2f4858ff;
+  --international-orange-aerospace: #fe5d26ff;
+  --amazon: #4a7c59ff;
+  --copper: #a8763eff;
+  --bdazzled-blue: #1857a4ff;
+  --byzantium: #7a3b69ff;
 }
 html {
   height: 100%;
@@ -23,7 +33,14 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: var(--pale-green);
+  /* background-color: var(--pale-green); */
+  /* aspect-ratio: 960/300; */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url('./images/blob-scene.svg');
 }
 header {
   display: flex;
@@ -38,7 +55,7 @@ h1 {
 
 .heading {
   background-color: #00bfd5;
-  color: #f2f7f5;
+  color: #ffffff;
   list-style: none;
   justify-content: center;
   text-decoration: underline;
@@ -54,12 +71,13 @@ header ul li {
   padding: 5px 15px;
 }
 
-h1 {
-  color: #415467;
+h1,
+h2,
+h3 {
+  color: var(--charcoal);
 }
 
 h2 {
-  color: #415467;
   display: block;
   font-size: 1.5em;
   margin-block-start: 0.83em;
@@ -68,15 +86,11 @@ h2 {
   margin-inline-end: 0px;
 }
 
-h3 {
-  color: #415467;
-}
-
 .kittens-of-day {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 1.5px solid #008aa1;
+  border: 1.5px solid var(--lapis-lazuli);
   padding: 5px;
   margin: 0px auto 10px 20px;
 }
@@ -159,7 +173,7 @@ nav ul {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -181,7 +195,7 @@ nav ul {
 
 /* Number text (1/4 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
